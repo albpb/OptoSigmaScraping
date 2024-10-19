@@ -24,7 +24,7 @@ with open("product.json", "r") as product_json:
         for spec in new_specs:
             # format value
             proc_value = re.sub(r"^\s+|\s+$", "", row_value[spec])
-            # eliminate lambda from diameter
+            # eliminate phi from diameter
 
             # (comment): I tried to detect specific special characters, but when python builds strings
             # it processes the special characters, so if I try to detect it by using something as "\\u[etc]"
